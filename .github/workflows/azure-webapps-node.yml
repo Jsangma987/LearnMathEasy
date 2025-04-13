@@ -45,6 +45,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
+        git add package-lock.json  # Or yarn.lock if using Yarn
         npm run build --if-present
         npm run test --if-present
 
